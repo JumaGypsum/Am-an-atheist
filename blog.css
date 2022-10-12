@@ -9,7 +9,7 @@
     --secondary-color:#fff;
     --grey-shade:#ddd;
     --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    --header-color: #002D62;
+    --header-color: #1da1f2;
     --links-color:#F9629F;
 }
 body{
@@ -56,28 +56,29 @@ p{
 }
 #main-header{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 5rem;
+    min-height: 3rem;
     background-color: var(--header-color);
     position: sticky;
     top: 0;
     z-index: 2;
 }
-#main-header h1{
-    margin: 5px auto;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--secondary-color);
+#main-header img{
+    max-width: 120px;
+    height: 60px;
+    margin: 5px auto; 
 }
 #main-header li{
     display: inline-block;
     margin: .3rem auto;
 }
+#main-nav{
+    margin: 0 auto;
+}
 #main-nav a{
-    padding: 5px;
+    padding: 4px;
     margin: 5px;
     font-weight: bold;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -133,26 +134,26 @@ p{
 }
 #sidebar .container{
     margin: .5rem;
-    box-shadow: var(--box-shadow);
 }
 #sidebar .container img{
-    max-width: 35%;
-    margin: 2px;
+    max-width: 50%;
+    margin: 10px;
 }
 #sidebar .container a{
     display: inline-block;
     margin:.5rem;
     background-color: rgb(134, 219, 134);
     color: var(--primary-color);
-    padding: .3rem;
+    padding: .5rem;
     border-radius: 5px;
+    border: 1px rgb(102, 168, 8)solid;
 }
 #sidebar .container h4{
     color: rgba(0, 0, 0, 0.7);
 }
 #cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr;
     margin: 0 .5rem 1rem .5rem;
 }
 #card{
@@ -162,36 +163,27 @@ p{
     align-items: center;
     text-align: center;
     margin: .5rem;
-    padding: 1rem;
-    box-shadow: var(--box-shadow);
+    padding: .5rem;
+    border-bottom: 2px var(--links-color) solid;
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+#card img{
+    max-width: 100%;
+    border-radius: 5px;
 }
 #cards #card h3{
     color: var(--primary-color);
-    margin-top: .5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 #cards #card h4{
-    color: red;
-    margin-top: .5rem;
-}
-#card img{
-    max-width: 70%;
+    color: var(--secondary-color);
+    background-color: var(--links-color);
+    margin-top: 1rem;
+    padding: 5px;
     border-radius: 5px;
-}
-#resources-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin:.5rem;
-}
-.resources-div{
-    box-shadow: var(--box-shadow);
-    margin: .5rem;
-    padding: .5rem;
-}
-#resources-container .resources-div img{
-    width: 70%;
-}
-#resources-container .resources-div h4{
-    margin: 1rem auto;
 }
 footer{
     display: flex;
@@ -211,7 +203,7 @@ footer #social a{
     margin: 0 1px;
     border: 1px rgba(255, 255, 255, 0.2) solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 4px;
     text-transform: capitalize;
 }
 footer #social a:hover{
@@ -331,12 +323,12 @@ footer #social a:hover{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        text-align: centers;
+        text-align: center;
         min-height: 4rem;
     }
-    #main-header h1{
-        font-size: 1.2rem;
-        margin-left: 6rem;
+    #main-header img{
+        max-width: 150px;
+        height: 75px;
     }
     #main-nav{
         margin-right: 6rem;
@@ -350,7 +342,7 @@ footer #social a:hover{
     }
     #wrapper{
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 68% 30%;
         justify-content: space-between;
         grid-gap: .5rem;
     }
@@ -403,26 +395,23 @@ footer #social a:hover{
         border: 1px var(--header-color) solid;
         border-radius: 5px;
     }
-    #sidebar .container div a:hover{
-        background-color: rgb(134, 219, 134);
-    }
-    #cards-header{
-        width: 78.5%;
-        margin: .5rem 3px 0 8px;
+    #sidebar .container a:hover{
+        transform: scale(1.1) ;
     }
     #content-wrapper{
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 30% 68%;
         grid-gap: .5rem;
     }
     #cards{
-        display: flex;
-        justify-content: space-evenly;
         text-align: center;
         border: 1px var(--header-color) solid;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius:
-         5px;
+        border-radius: 10px;
+    }
+    #card-header{
+        text-align: center;
+        margin:  0 auto;
+        width: 100%;
     }
     #card{
        display: flex;
@@ -430,14 +419,12 @@ footer #social a:hover{
        padding: .5rem;
        margin: .5rem;
        box-shadow: none;
-    }
-    #card:hover{
-        background-color: var(--links-color);
-        border-radius: 5px;
-        color: var(--secondary-color);
+       border-bottom: 2px var(--links-color) solid ;
+       border-radius: none;
     }
     #card img{
         max-width: 100%;
+        height: auto;
         margin: auto;
     }
     #card h3{
@@ -445,49 +432,8 @@ footer #social a:hover{
         color: var(--primary-color);
     }
     #card h4{
-        margin: .5rem;
+        margin: 1rem;
         color: rgba(255, 0, 0, .7);
-    }
-    #resources{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-right: 2rem;
-        width: 100%;
-    }
-    #resources h2{
-        text-transform: capitalize;
-        margin: 0 .5rem;
-        max-width: 90%;
-    }
-    #resources-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        border: 1px var(--header-color) solid;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        max-width: 90%;
-        margin:0 .5rem;
-    }
-    .resources-div{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: .5rem;
-        margin: .3rem;
-        box-shadow: none;
-        border-radius: 5px;
-    }
-    .resources-div:hover{
-        background-color: var(--links-color);
-    }
-    .resources-div img{
-        max-width: 100%;
-    }
-    .resources-div h4{
-        margin-top: .5rem;
     }
     footer{
         display: flex;
@@ -499,7 +445,7 @@ footer #social a:hover{
         padding: .5rem;
     }
     footer #social, footer p{
-        margin: 1rem auto;
+        margin: 2.5rem auto;
 
     }
 
@@ -560,7 +506,6 @@ footer #social a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     #main-video video{
         width: 100%;
@@ -614,8 +559,5 @@ footer #social a:hover{
         width: 150px;
         height: 100px;
         margin: .5rem auto;
-
     }
-
-
 }
