@@ -59,15 +59,15 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 3rem;
+    min-height: 2rem;
     background-color: var(--header-color);
     position: sticky;
     top: 0;
     z-index: 2;
 }
 #main-header img{
-    max-width: 120px;
-    height: 60px;
+    max-width: 80px;
+    height: 40px;
     margin: 5px auto; 
 }
 #main-header li{
@@ -110,11 +110,37 @@ p{
    padding: .5rem;
    margin: auto 3px;
 }
+.intro h2{
+    margin-top: .5rem;
+}
+.intro h4{
+    color: var(--header-color);
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
 .intro p{
     margin-top: .5rem;
     word-wrap: wrap;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.8);
+}
+.intro a{
+    color: var(--links-color);
+    font-weight: bold;
+}
+#topics h4{
+    color: var(--header-color);
+    margin: .7rem;
+    font-size: 1.3rem;
+}
+#topics a{
+    color: var(--primary-color);
+    padding: .4rem;
+    margin-left: .7rem;
+    text-decoration: underline;
+}
+#topics .sites a{
+    color: var(--links-color)
 }
 #sidebar{
     color: var(--primary-color);
