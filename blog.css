@@ -38,7 +38,10 @@ h2{
     color: var(--secondary-color);
 }
 p{
-    line-height: 1.6;
+    line-height: .8;
+    font-size: .96rem;
+    text-indent: 1.5rem;
+    word-spacing: -1px;
 }
 .navigation-link{
     margin: 1rem auto;
@@ -78,7 +81,7 @@ p{
     margin: 0 auto;
 }
 #main-nav a{
-    padding: 4px;
+    padding: 3px;
     margin: 5px;
     font-weight: bold;
     border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -139,12 +142,18 @@ p{
     margin-left: .7rem;
     text-decoration: underline;
 }
+#topics a:hover{
+    color: var(--links-color);
+}
 #topics .sites a{
     color: var(--links-color)
 }
 #sidebar{
     color: var(--primary-color);
-    margin: 1rem 0;
+    margin: 1rem auto;
+}
+#sidebar h2{
+    margin: auto 5px;
 }
 #sidebar-container{
     display: grid;
@@ -154,15 +163,11 @@ p{
     text-align: center;
     background-color: var(--secondary-color);
 }
-#sidebar h2{
-    width: 97.5%;
-    margin: auto;
-}
 #sidebar .container{
-    margin: .5rem;
+    margin: .3rem;
 }
 #sidebar .container img{
-    max-width: 50%;
+    max-width: 20%;
     margin: 10px;
 }
 #sidebar .container a{
@@ -170,46 +175,11 @@ p{
     margin:.5rem;
     background-color: rgb(134, 219, 134);
     color: var(--primary-color);
-    padding: .5rem;
-    border-radius: 5px;
+    padding: .2rem;
     border: 1px rgb(102, 168, 8)solid;
 }
 #sidebar .container h4{
     color: rgba(0, 0, 0, 0.7);
-}
-#cards{
-    display: grid;
-    grid-template-columns:  1fr;
-    margin: 0 .5rem 1rem .5rem;
-}
-#card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin: .5rem;
-    padding: .5rem;
-    border-bottom: 2px var(--links-color) solid;
-    border-end-end-radius: 5px;
-    border-end-start-radius: 5px;
-}
-#card img{
-    max-width: 100%;
-    border-radius: 5px;
-}
-#cards #card h3{
-    color: var(--primary-color);
-    margin-top: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-#cards #card h4{
-    color: var(--secondary-color);
-    background-color: var(--links-color);
-    margin-top: 1rem;
-    padding: 5px;
-    border-radius: 5px;
 }
 footer{
     display: flex;
