@@ -5,23 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Am an atheist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="blog.css">
     <link href="cssfonts/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9e2fef867.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+      
+    </header>
     <header id="main-header">
+        <nav class="humbuger">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="blog1.html">Everyone is ignoring jesus.</a>
+                <a href="blog2.html">God is impossible.</a>
+                <a href="blog3.html">Pondering Gods plan.</a>
+                <a href="blog4.html">Prayers dont work.</a>
+                <a href="blog5.html">Problem with creation story</a>
+                <a href="blog6.html">Their is no true christian.</a>
+                <a href="blog7.html">The book of revelation is wrong.</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Blog</button>
+            </div>
+        </nav>
         <img src="../logo/logo-no-background.png" alt="website logo">
         <nav id="main-nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="video.html">Videos</a></li>
                 <li><a href="forum.html">Forum</a></li>
             </ul>
         </nav>
     </header>
     <section id="showcase">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../img/james-wheeler.jpg">
+              <div class="text">
+                <h3>You are not alone! Come out, we are here to help!</h3>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../img/johannes-plenio.jpg">
+              <div class="text">
+                <h3>You are not alone! Come out, we are here to help!</h3>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../img/pexels.jpg">
+              <div class="text">
+                <h3>You are not alone! Come out, we are here to help!</h3>
+              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>       
     </section>
     <section id="wrapper">
         <section>
@@ -31,6 +82,14 @@
                 <p>Our website provides a space for atheists and non-believers to learn about and discuss atheism, its history, philosophy, and implications for society. We offer resources such as E-books for those who are curious about atheism, as well as support for those who are facing challenges and discrimination due to their lack of belief.</p>
                 <p>We believe that atheism is a valid and rational worldview, and that it is important to promote critical thinking, evidence-based reasoning, and intellectual curiosity. Our website is a place where people from all backgrounds and walks of life can come together to engage in respectful dialogue and exchange ideas.</p> 
                 <p>Whether you are a lifelong atheist, a curious believer, or someone in between, we welcome you to our website and invite you to join us in exploring the fascinating and complex world of atheism.</p>
+                
+            </article>
+            <article class="intro">
+                <h4>What is Atheism</h4>
+                <p>Before we define what atheism is, you might be wondering, why talk about atheism? why not just live? Well, Atheism matters because religion matters. Religion influences many aspects of our society, such as laws, education, culture, and politics. Religion also affects how people treat each other, especially those who have different beliefs or no beliefs at all. Therefore we must have converstaion on both sides.</p>
+                <p><b>Atheism</b> is defined as a lack of belief in the existence of any deity or deities. The term "atheism" is derived from the Greek word "atheos," which means "without gods." In other words, an <b>atheist</b> is someone who does not believe in any gods or goddesses. Atheism can be contrasted with theism, which is the belief in the existence of one or more gods or goddesses.
+                <p>Atheism is not a belief system or a religion in and of itself, but rather a stance on a single issue: the existence of gods. This means that atheists can have a wide variety of beliefs about other topics, such as morality, spirituality, or the nature of the universe.</p>  
+                <p>There are different types of atheism, including strong atheism (which asserts that no gods exist), weak atheism (which simply lacks belief in gods), and agnosticism (which holds that the existence of gods is unknown or unknowable). Some atheists may also identify as humanists or secularists, who advocate for a society based on reason, ethics, and compassion rather than religious beliefs.</p>
             </article>
             <article class="intro">
                 <h4>Common misconceptions about atheism</h4>
@@ -82,42 +141,42 @@
                     <img src="../img/God-dlusion2.jpeg">
                     <div>
                        <h4>The God delusion</h4>
-                       <a href="../docs/The-god-delusion.pdf" download="The-god-delusion">Download</a>
+                       <a href="../docs/The-god-delusion.pdf" download="The-god-delusion"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="container">
                     <img src="../img/Outgrowing-god.jpeg">
                     <div>
                         <h4>Outgrowing God</h4>
-                        <a href="../docs/Outgrowing-god.pdf" download="Outgrowing-god">Download</a>
+                        <a href="../docs/Outgrowing-god.pdf" download="Outgrowing-god"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="container">
                     <img src="../img/free-will2.jpeg">
                     <div>
                         <h4>Free will</h4>
-                        <a href="../docs/free-will.pdf" download="Free-will">Download</a>
+                        <a href="../docs/free-will.pdf" download="Free-will"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="container">
                     <img src="../img/Blind-watch-maker.jpeg">
                     <div>
                         <h4>The blind watch maker</h4>
-                        <a href="../docs/blind-watch-maker.pdf" download="The-blind-watchmaker">Download</a>
+                        <a href="../docs/blind-watch-maker.pdf" download="The-blind-watchmaker"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="container">
                     <img src="../img/selfish-gene.jpeg">
                     <div>
                         <h4>Selfish gene</h4>
-                        <a href="../docs/selfish-gene.pdf" download="The-selfish-gene">Download</a>
+                        <a href="../docs/selfish-gene.pdf" download="The-selfish-gene"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
                 <div class="container">
                     <img src="../img/why-there-is-no-God.jpeg">
                     <div>
                         <h4>Why there is no God</h4>
-                        <a href="../docs/Armin-navabi.pdf" download="why-there-is-no-god">Download</a>
+                        <a href="../docs/Armin-navabi.pdf" download="why-there-is-no-god"><i class="fa-solid fa-cloud-arrow-down fa-xl"></i></a>
                     </div>
                 </div>
             </div>
@@ -125,13 +184,13 @@
     </section>
     <footer>
         <div id="social">
-            <a href="https://www.facebook.com/profile.php?id=100007259805232">facebook</a>
-            <a href="https://www.twitter.com">twitter</a>
-            <a href="#">WhatsApp</a>
-            <a href="#">Instagram</a>
-            <a href="#">Youtube</a>
+            <a href="https://www.facebook.com/profile.php?id=100007259805232"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
         </div>
-        <p>&copy; Am an a atheist. All rights reserved.</p>
+        <p>&copy; Am an a atheist 2023</p>
     </footer>
     <script defer src="blog.js"></script>
 </body>
