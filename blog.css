@@ -285,25 +285,25 @@ p{
 }
 #sidebar{
     color: var(--primary-color);
-    margin: 1rem auto;
+    margin: .5rem 5px;
 }
 #sidebar h2{
     margin: auto 5px;
 }
 #sidebar-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: var(--secondary-color);
 }
 #sidebar .container{
-    margin: .3rem;
+    margin: 2px;
 }
 #sidebar .container img{
     max-width: 20%;
-    margin: 10px;
+    margin: 2px;
 }
 
 #sidebar .container a{
