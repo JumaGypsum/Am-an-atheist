@@ -11,6 +11,7 @@
     --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     --header-color: #1da1f2;
     --links-color:#F9629F;
+    --read-more: #03C03C;
 }
 body{
     font-family:"Roboto", sans-serif;
@@ -99,19 +100,17 @@ p{
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: var(--secondary-color); 
+    background-color: rgb(245, 247, 248); 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
     text-align: left;
   }
-  
   /* The sidebar links */
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
     color: var(--primary-color);
     display: block;
     transition: 0.3s;
@@ -240,8 +239,30 @@ p{
     grid-gap: 1rem;
 }
 .intro{
-   padding: .5rem;
+   padding: 1rem;
    margin: auto 3px;
+   display: flex;
+   flex-direction: column;
+}
+ .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.intro #more {
+    display: none;
+}
+.intro #myBtn{
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    background-color: var(--read-more);
+    border: 1px var(--secondary-color) solid;
+    border-radius: 5px;
+    margin: .5rem;
+}
+.intro #myBtn:hover{
+    background-color: var(--header-color);
 }
 .intro h2{
     margin-top: .3rem;
@@ -270,10 +291,18 @@ p{
     padding: .3rem;
     
 }
+#topics{
+    padding: 1rem;
+}
 #topics h4{
-    color: var(--header-color);
-    margin: .7rem;
+    color: var(--secondary-color);
+    margin: .5rem 3px;
     font-size: 1.3rem;
+    background-color: var(--header-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: .3rem;
+    text-align: center;
 }
 #topics a{
     color: var(--primary-color);
@@ -284,12 +313,16 @@ p{
 #topics a:hover{
     color: var(--links-color);
 }
+#topics .sites{
+    padding: .3rem;
+}
 #topics .sites a{
     color: var(--links-color)
 }
 #sidebar{
     color: var(--primary-color);
     margin: .5rem 5px;
+    padding: .5rem;
 }
 #sidebar-container{
     display: grid;
@@ -308,7 +341,18 @@ p{
     padding: .2rem;
     margin: 2px;
 }
-
+#sidebar-h3{
+    color: var(--secondary-color);
+    background-color: var(--header-color);
+    text-align: center;
+    margin: .3rem;
+    padding: .3rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+#sidebar h2{
+    margin: auto .5rem;
+  }
 #sidebar .container a{
     display: inline-block;
     margin:.5rem;
