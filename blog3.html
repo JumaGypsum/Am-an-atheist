@@ -11,12 +11,37 @@
 </head>
 <body>
     <header id="main-header">
+        <nav class="humbuger">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h3 id="sidebar-h3">Blogs</h3>
+                <a href="blog1.html">Everyone is ignoring jesus.</a>
+                <a href="blog2.html">God is impossible.</a>
+                <a href="blog3.html">Pondering Gods plan.</a>
+                <a href="blog4.html">Prayers dont work.</a>
+                <a href="blog5.html">Problem with creation story</a>
+                <a href="blog6.html">Their is no true christian.</a>
+                <a href="blog7.html">The book of revelation is wrong.</a>
+                <section id="topics">
+                    <h3 id="sidebar-h3">Atheists Websites</h3>
+                    <ul class="sites">
+                        <li> <li><a href="https://www.patheos.com/nonreligious-questions/" target="_blank">Friendly Atheist</a></li>
+                        <li><a href="http://godisimaginary.com/" target="_blank">God is imaginary</a></li>
+                        <li><a href="https://www.atheistrepublic.com/" target="_blank">Atheist Republic</a></li>
+                        <li><a href="https://atheistpapers.com/" target="_blank">Atheist Papers</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Blog</button>
+            </div>
+        </nav>
         <img src="../logo/logo-no-background.png" alt="website logo">
         <nav id="main-nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="video.html">Videos</a></li>
-                <li><a href="forum.html">News</a></li>
+                <li><a href="news.html">News</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +52,17 @@
                 <img src="../img/plan.jpg">
             </div>
             <div class="intro">
+                <div class="author-card">
+                    <div class="author-card-img">
+                        <img src="../img/pexels-andrea.jpg" alt="Author Image">
+                    </div>
+                    <div class="author-card-link"> 
+                    <span>by John Doe:</span><span class="post-time"> 1Hour ago</span></p>
+                    <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </div>  
+                </div>
                 <p id="opening">If you are a Christian believer,you are aware of God's plan.Many believers attribute it to many difficulties that happen in their lives such as accidents,diseases etc.
                 If you think about it,is God’s plan perfect?
                 In this article I am going to assume you’re a believer and you’re probably popular with the statement “May his will be done”.Am going to show you that God's plan doesn’t make sense.</p>
@@ -46,6 +82,15 @@
                 <p>If you think about it as an intelligent Person you realize that Psalms 139:16 is meaningless. Why should the Bible contain such a vague verse?Because it’s not God's word. And God is Imaginary </p>
                 <p>Things happen because they happen. Nothing is controlling events in our lives.No supernatural being has a plan for us.We humans mess up things.We also fix the same things.</p>
                 <a href="#opening" class="navigation-link"><i class="fas fa-arrow-circle-up"></i></a>
+                <div class="comment-card">
+                    <div class="comment-input">
+                        <input type="text" placeholder="Leave us comment">
+                        <input type="submit" value="Comment!">
+                    </div>
+                    <div class="comment-list">
+                        <h1>Top comments</h1>
+                    </div>
+                </div>
             </div>
           </article>
     </section>

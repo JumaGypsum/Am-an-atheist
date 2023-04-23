@@ -12,18 +12,69 @@
 </head>
 <body>
     <header id="main-header">
+        <nav class="humbuger">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h3 id="sidebar-h3">Blogs</h3>
+                <a href="blog1.html">Everyone is ignoring jesus.</a>
+                <a href="blog2.html">God is impossible.</a>
+                <a href="blog3.html">Pondering Gods plan.</a>
+                <a href="blog4.html">Prayers dont work.</a>
+                <a href="blog5.html">Problem with creation story</a>
+                <a href="blog6.html">Their is no true christian.</a>
+                <a href="blog7.html">The book of revelation is wrong.</a>
+                <section id="topics">
+                    <h3 id="sidebar-h3">Atheists Websites</h3>
+                    <ul class="sites">
+                        <li> <li><a href="https://www.patheos.com/nonreligious-questions/" target="_blank">Friendly Atheist</a></li>
+                        <li><a href="http://godisimaginary.com/" target="_blank">God is imaginary</a></li>
+                        <li><a href="https://www.atheistrepublic.com/" target="_blank">Atheist Republic</a></li>
+                        <li><a href="https://atheistpapers.com/" target="_blank">Atheist Papers</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Blog</button>
+            </div>
+        </nav>
         <img src="../logo/logo-no-background.png" alt="website logo">
         <nav id="main-nav">
             <ul>
                 <li><a href="../home.html">Home</a></li>
                 <li><a href="../video.html">Videos</a></li>
-                <li><a href="../forum.html">News</a></li>
+                <li><a href="../news.html">News</a></li>
             </ul>
         </nav>
     </header>
     <section id="topic-article">
-        <h2>News</h2>
-        <p>Are you tired of being told what to believe by religious people? Do you want to have more freedom and fun in your life? If so, you might want to consider atheism. Atheism is the lack of belief in any gods or supernatural beings. It is not a religion, but a rational and evidence-based worldview. Let us have a mature discusion...</p>
+        <article class="blog-content intro"> 
+            <h2>News</h2>
+            <div class="author-card">
+                <div class="author-card-img">
+                    <img src="../img/pexels-andrea.jpg" alt="Author Image">
+                </div>
+                <div class="author-card-link"> 
+                <span>by John Doe:</span><span class="post-time"> 1Hour ago</span></p>
+                <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                </div>  
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dicta culpa in nisi molestiae voluptatibus est veritatis at ab ipsa eaque perspiciatis assumenda obcaecati corporis, provident expedita laudantium repellat quia sint dolorum dolore quis eos sunt voluptas. Magni eos, dolorem eius repellat soluta voluptate fugiat ipsam placeat molestiae iusto qui dolor cupiditate ducimus dolore consequatur! Minima quo natus placeat. Consectetur eveniet dolorem optio velit fugit voluptate beatae quibusdam iste veritatis reiciendis repellat laboriosam itaque minima, aliquid temporibus inventore quam doloremque incidunt. Eius, quisquam a repellendus ratione commodi quos amet earum reprehenderit sit suscipit deleniti numquam iste deserunt blanditiis dolore magni.
+            </p>
+        <div class="comment-card">
+            <div class="comment-input">
+                <input type="text" placeholder="Leave us comment">
+                <input type="submit" value="Comment!">
+            </div>
+            <div class="comment-list">
+                <h1>Top comments</h1>
+            </div>
+        </div>
+
+        </article>
+       
         
     </section>
     <footer>

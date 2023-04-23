@@ -11,12 +11,37 @@
 </head>
 <body>
     <header id="main-header">
+        <nav class="humbuger">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h3 id="sidebar-h3">Blogs</h3>
+                <a href="blog1.html">Everyone is ignoring jesus.</a>
+                <a href="blog2.html">God is impossible.</a>
+                <a href="blog3.html">Pondering Gods plan.</a>
+                <a href="blog4.html">Prayers dont work.</a>
+                <a href="blog5.html">Problem with creation story</a>
+                <a href="blog6.html">Their is no true christian.</a>
+                <a href="blog7.html">The book of revelation is wrong.</a>
+                <section id="topics">
+                    <h3 id="sidebar-h3">Atheists Websites</h3>
+                    <ul class="sites">
+                        <li> <li><a href="https://www.patheos.com/nonreligious-questions/" target="_blank">Friendly Atheist</a></li>
+                        <li><a href="http://godisimaginary.com/" target="_blank">God is imaginary</a></li>
+                        <li><a href="https://www.atheistrepublic.com/" target="_blank">Atheist Republic</a></li>
+                        <li><a href="https://atheistpapers.com/" target="_blank">Atheist Papers</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Blog</button>
+            </div>
+        </nav>
         <img src="../logo/logo-no-background.png" alt="website logo">
         <nav id="main-nav">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="video.html">Videos</a></li>
-                <li><a href="forum.html">News</a></li>
+                <li><a href="news.html">News</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +52,17 @@
                 <img src="../img/creation2.jpg">
             </div>
             <div class="intro">
+                <div class="author-card">
+                    <div class="author-card-img">
+                        <img src="../img/pexels-andrea.jpg" alt="Author Image">
+                    </div>
+                    <div class="author-card-link"> 
+                    <span>by John Doe:</span><span class="post-time"> 1Hour ago</span></p>
+                    <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </div>  
+                </div>
                 <p id="opening">The Bible is a holy book for many Christians.Most of them consider everything that is written in it as the truth.Millions of Christians claim that the creation story is literally true and that’s all we need to explain the origin of the universe and life in it.</p>
                 <br>
                 <p>Science on the other hand has theories that explain the origin of the universe and life in a better way than the Bible.Taking the <a href="" class="doc" target="_blank">Big Bang</a> and <a href="" class="doc" target="_blank">Evolution</a> theories as an example,though they have their limitations,they are more plausible.As a result,we find the biblical explanation of the origin of the universe wrong.
@@ -90,6 +126,15 @@
                <br>
                 <p>At this point we realize that the Bible is wrong on creation in Genesis 1.When we analyze the writings,something should come in our mind.It was written by ancient people who were looking for a way to explain the origin of life and they barely understood science.Therefore God is not to be credited here.To learn more about the early  universe</p> 
                 <a href="" class="navigation-link"><i class="fas fa-arrow-circle-up"></i></a>
+                <div class="comment-card">
+                    <div class="comment-input">
+                        <input type="text" placeholder="Leave us comment">
+                        <input type="submit" value="Comment!">
+                    </div>
+                    <div class="comment-list">
+                        <h1>Top comments</h1>
+                    </div>
+                </div>
             </div>
           </article>
     </section>

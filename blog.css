@@ -45,7 +45,7 @@ p{
     word-spacing: -1px;
 }
 .navigation-link{
-    margin: 1rem auto;
+    margin: .5rem auto;
     width: 5%;
     padding: .3rem;
     display: flex;
@@ -156,7 +156,7 @@ p{
   
 /*Image slider*/
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
   }
@@ -245,6 +245,8 @@ p{
    margin: auto 3px;
    display: flex;
    flex-direction: column;
+   padding: .2rem;
+   
 }
 .intro #more {
     display: none;
@@ -262,6 +264,13 @@ p{
 }
 .intro h2{
     margin-top: .3rem;
+}
+.intro h3{
+    background-color: var(--header-color);
+    padding:.2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: .5rem 0;
 }
 .intro h4{
     margin-top: 1rem;
@@ -383,11 +392,77 @@ footer #social a:hover i{
 .blog-content{
    padding: 5px;
 }
+.blog-content .author-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex start;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+.blog-content .author-card img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.blog-content .author-card-link span{
+    font-weight: bold;
+}
+.blog-content .author-card-link .post-time{
+    color: rgba(0, 0, 0, 0.5);
+}
+.blog-content .author-card-link{
+    padding: .2rem;
+    margin-left: .2rem;
+}
+.blog-content .author-card-link a{
+    margin: .3rem;
+}
+.blog-content .author-card-link a .fa-twitter{
+    color: #1da1f2;
+}
+.blog-content .author-card-link a .fa-facebook{
+    color: #1877f2 ;
+}
+.blog-content .author-card-link a .fa-whatsapp{
+    color: #25d366;
+}
+.blog-content .author-card-link a:hover{
+    color: var(--header-color);
+}
+
 .blog-content h2{
     background-color: var(--links-color);
     font-size: 1.3rem;
 }
-
+.comment-card{
+    background-color: rgb(247, 242, 242) ;
+}
+.blog-content .comment-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: rgb(247, 242, 242);
+    padding: .5rem;
+}
+.blog-content .comment-input input[type='text'], input[type='submit']{
+    padding: .5rem;
+    margin: .3rem 0;
+    border-radius: 5px;
+    border: 2px solid var(--header-color);
+}
+.blog-content .comment-input input[type='submit']{
+    background-color: var(--read-more);
+    border: 2px solid var(--read-more);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.blog-content .comment-list{
+    margin-top: 1rem;
+}
+.blog-content .comment-list h1{
+    color: var(--links-color);
+    text-decoration: underline;
+}
 /*---Video---*/
 #video-wrapper{
     background-color: rgb(247, 242, 242);
