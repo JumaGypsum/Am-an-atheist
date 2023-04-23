@@ -91,6 +91,9 @@ p{
 #main-nav a:hover{
     background-color: var(--links-color);
 }
+#main-nav a:active{
+    background-color: red;
+}
 /* Humbuger menu */
 /* The sidebar menu */
 .sidebar {
@@ -261,6 +264,7 @@ p{
     margin-top: .3rem;
 }
 .intro h4{
+    margin-top: 1rem;
     color: var(--secondary-color);
     text-align: center;
     font-size: 1.3rem;
@@ -284,7 +288,6 @@ p{
     padding: .3rem;
     
 }
-
 #topics h4{
     color: var(--secondary-color);
     margin: .5rem 3px;
