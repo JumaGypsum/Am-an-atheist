@@ -43,7 +43,12 @@ p{
     font-size: .96rem;
     text-indent: 1.5rem;
     word-spacing: -1px;
-}
+}/*
+.wrapper{
+    width: 990px;
+    margin: 0 auto;
+    padding: 10px 0;
+}*/
 .navigation-link{
     margin: .5rem auto;
     width: 5%;
